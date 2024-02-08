@@ -17,7 +17,7 @@
 footer{
     background-color: var(--bg-clr);
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: var(--font-clr);
     padding: 1em;
 }
 
