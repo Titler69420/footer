@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-clr: #000;
+    --secondary-clr:#252f3d;
+    --font-clr:#fff;
+
+    /* bg-clr in rgb rgb(0, 0, 0) */
+    /* secondary-clr in rgb rgb(37, 47, 61) */
+    /* font-clr in rgb rgb(255, 255, 255) */
+}
+
+footer{
+    background-color: var(--bg-clr);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 1em;
+}
+
+.impacts__button{
+    /* to center the button */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+    /* button styles */
+    padding: 0.4em 1em 0.4em; 
+    background-color: var(--bg-clr);
+    color: var(--font-clr); 
+    border: 1px solid var(--secondary-clr);
+    border-radius: 12px; 
+    margin-bottom: 1em;
+}
+
+.impacts__container{
+    /* used flexbox to put the items in row */
+    display: flex;
+    justify-content: space-between; /* to evenly space items horizontally */
+    align-items: center; /* to center all the text*/
+
+    /* styling the div */
+    height: 10rem; 
+    border: 1px solid var(--secondary-clr);
+    border-radius: 10px; /* coudlnt think of better way to give a border radius*/
+    padding: 0 5em 0; /* only giving padding on left and right because already ussed align-items to center elements veritcally */
+}
+
+
+.impacts__items{
+    text-align: center;
+}
+
+.seperator{
+    height: 5rem;
+    border-right: 1px solid var(--secondary-clr);
+}
+
+.impacts__odometer{
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+    line-height: 3rem; /*to bring the impacts discriptor and the odometer closer*/
+}
+
+.impacts__description{
+    font-weight: 400;
+    font-size: 0.850rem;
+    letter-spacing: -0.05em;
+}
